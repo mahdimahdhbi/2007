@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mahdi2.css">
+    <title>Inscrire</title>
+    <link rel="icon" href="Capture_d_écran_2024-07-23_120549-removebg-preview.png">
+</head>
+<body>
+    <section id="signup">
+        <h2>Inscrivez-vous pour en savoir plus</h2>
+        <form id="signupForm" action="submit_form.php" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">S'inscrire</button>
+        </form>
+    </section>
+    
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            if (!this.checkValidity()) {
+                event.preventDefault(); // Prevent form submission if form is invalid
+                alert('Please fill out the required fields.');
+            } else {
+                // Form is valid, handle the submission
+                event.preventDefault(); // Prevent the default form submission
+                // Perform the form submission via AJAX or other method here
+                // Redirect to another page after successful form submission
+                window.location.href = 'mahdi1.html';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="mahdi3.css">
+    <link rel="icon" href="Capture_d_écran_2024-07-23_120549-removebg-preview.png">
+</head>
+<body>
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form id="contactForm" action="send_message.php" method="post">
+            <label for="contact-name">Nom :</label>
+            <input type="text" id="contact-name" name="name" required>
+            <label for="contact-email">Email :</label>
+            <input type="email" id="contact-email" name="email" required>
+            <label for="contact-message">Message :</label>
+            <textarea id="contact-message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            if (!this.checkValidity()) {
+                event.preventDefault(); // Prevent form submission if form is invalid
+                alert('Veuillez remplir tous les champs obligatoires.');
+            } else {
+                // Form is valid, handle the submission
+                event.preventDefault(); // Prevent the default form submission
+                
+                // Perform the form submission via AJAX or other method here
+                // For example, you could use the Fetch API or XMLHttpRequest
+                
+                // Redirect to another page after successful form submission
+                window.location.href = 'mahdi1.html';
+            }
+        });
+    </script>
+</body>
+</html>
