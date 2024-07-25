@@ -140,4 +140,21 @@ body {
     }
   }
   
+  #myList img {
+    width: 250px;
+  }
+
+  #myList .rating {
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+  }
+
+  #myList div {
+    display: flex; /* Make it flex */
+    flex-direction: column; /* Make images and text go above one another */
+    justify-content: end; /* If the parent is bigger than image + text, add space between them */
+    align-items: center;
+    border: 1px solid black;
+  }
 

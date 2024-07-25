@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>All Products - Red store</title>
+  <title>Triple M store Pants Products</title>
   <link rel="stylesheet" href="style.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" href="Capture_d_écran_2024-07-23_120549-removebg-preview.png">
 </head>
 
 <body>
@@ -20,19 +21,20 @@
   <div class="small-container">
     <div class="row row-2">
       <h2>Our Pants Products</h2>
-      <select name="" id="">
-        <option value="">Default Sorting</option>
-        <option value="">Sort by Price</option>
-        <option value="">Sort by Popularity</option>
-        <option value="">Sort by Rating</option>
-        <option value="">Sort by sales</option>
+      <select name="" id="sort">
+        <option value="1">Default Sorting</option>
+        <option value="2">Sort by Price</option>
+        <option value="3">Sort by Popularity</option>
+        <!--<option value="4">Sort by Rating</option>
+        <option value="">Sort by sales</option>-->
       </select>
     </div>
 
-    <div class="row">
+    <div id="myList" class="row"></div>
+    <!--<div class="row">
       <div class="col-4">
-        <img src="image gmc.jpg" width="250px">
-        <h4>Black Jeans</h4>
+        <img src="Sans titre.png" width="250px">
+        <h4>Triple M Pants</h4>
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -44,8 +46,8 @@
       </div>
 
       <div class="col-4">
-        <img src="image_projes_go_my_code.jpg" width="350px" />
-        <h4>Dark Blue Pants</h4>
+        <img src="png-clipart-cargo-pants-t-shirt-trousers-trouser-s-trouser-png-transparent-images-transparency-and-translucency-removebg-preview.png" width="350px" />
+        <h4>Cargo Pants</h4>
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -57,8 +59,8 @@
       </div>
 
       <div class="col-4">
-        <img src="doc_image_go_my_code.jpg" alt="" />
-        <h4>Black and Grey Special Jeans</h4>
+        <img src="png-clipart-waist-pocket-trousers-mens-pant-hd-black-active-pants-removebg-preview.png" alt="" />
+        <h4>Black Pants</h4>
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -68,23 +70,10 @@
         </div>
         <p>$15.00</p>
       </div>
-      <div class="col-4">
-        <img src="photo go my code.webp" width="300px" />
-        <h4>yellow pants</h4>
-        <div class="rating">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-o"></i>
-        </div>
-        <p>$20.00</p>
-      </div>
-    </div>
     <div class="row">
       <div class="col-4">
-        <img src="blue-denim-pants-5.jpg" width="200px"/>
-        <h4>Blue Jeans</h4> 
+        <img src="png-transparent-cargo-pants-khaki-pocket-pant-zipper-waist-trousers-removebg-preview.png" width="200px"/>
+        <h4>Cargo Pants</h4> 
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -96,8 +85,8 @@
       </div>
 
       <div class="col-4">
-        <img src="43080_w23l_stone_w_7.webp" alt="" width="200px" />
-        <h4>Purple jeans </h4>
+        <img src="Stylish-jeans-pants--on-transparent-background-PNG-removebg-preview.png" alt="" width="200px" />
+        <h4>Jeans Pants </h4>
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -108,8 +97,8 @@
         <p>$20.00</p>
       </div>
       <div class="col-4">
-        <img src="urban-classics_197814_TB3048_BLACK_20191002T155827_02.jpg" alt="" />
-        <h4>The black jeans </h4>
+        <img src="png-transparent-cargo-pants-m-1965-field-jacket-workwear-clothing-pantalon-cardigan-pantalon-pants-thumbnail-removebg-preview.png" alt="" />
+        <h4>Cargo Pants </h4>
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -122,8 +111,8 @@
     </div>
     <div class="row">
       <div class="col-4">
-        <img src="only_202659_15186872_BLACK_20191107T135709_01.jpg" alt=""/>
-        <h4>the first black</h4>
+        <img src="battle-dress-uniform-tactical-pants-propper-u-s-woodland-pant-removebg-preview.png" alt=""/>
+        <h4>Propper Pants</h4>
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -135,8 +124,8 @@
       </div>
 
       <div class="col-4">
-        <img src="R.jpg" alt="" width="200px"/>
-        <h4>The yellow jeans </h4>
+        <img src="vecteezy_mockup-of-blank-black-sports-pant_47064684.png" alt="" width="200px"/>
+        <h4>Black Sports Pant</h4>
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -148,8 +137,8 @@
       </div>
 
       <div class="col-4">
-        <img src="321356_norm.webp" alt="" width="200px"/>
-        <h4>The white jeans </h4>
+        <img src="vecteezy_mockup-of-blank-white-sports-pant_47064661.png" alt="" width="200px"/>
+        <h4>White Sports Pant</h4>
         <div class="rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -160,7 +149,7 @@
         <p>$30.00</p>
       </div>
      
-    </div>
+    </div>-->
 
   
   </div>
@@ -183,8 +172,7 @@
         <div class="footer-col-2">
           <img src="./assets/images/logo-white.png" alt="" />
           <p>
-            Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit.
-            Porro, eum?
+            Wanna Know More? Check out in out FaceBook community
           </p>
         </div>
         <div class="footer-col-3">
@@ -211,8 +199,14 @@
       <p class="copyright" id="copyright-text">Copyright 2024 - introidx</p>
     </div>
   </div>
-  <!-- JS for Toggle menu -->
+  <<!-- JS for Toggle menu -->
   <script src="./assets/js/toggleMenu.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<!-- JS script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script src="pants.js"></script>
+</html>
+  
